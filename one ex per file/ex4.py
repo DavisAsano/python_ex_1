@@ -15,10 +15,34 @@ print("start of part 4") # set breakpoint here
 s = "A very long description" # a long string
 filler = "..."
 # your code here
-
+for x in range(5,15):
+    if x * 2 + len(filler) > len(s):
+        print(x,s)
+    else:
+        shortened = s[0:x] + filler + s[-x:] 
+        print(x,shortened)
+    
 
 print("end of 4") # set breakpoint here 
 '''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # solution 4
 s = "A very long description" # a long string
 filler = "..."
