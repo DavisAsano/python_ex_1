@@ -14,8 +14,17 @@
 # LANGUAGE
 print("start of part 3") # set breakpoint here
 # your code here
-
-
+s = "Python is an interpreted, high-level, general-purpose programming language."
+n = s.split() #Split list
+case_counter = 1 #counter for every 2nd word upper case
+pos_counter = 0 #counter for position
+for i in n: #iterate through n
+    if case_counter % 2 == 0: #if count is even then = 2nd word
+        print(n[pos_counter].upper()) #upper case
+    else:
+        print(n[pos_counter]) #normal case
+    case_counter += 1 #add one to count
+    pos_counter += 1
 print("end of 3") # set breakpoint here 
 '''
 
